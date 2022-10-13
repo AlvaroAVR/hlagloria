@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand:wght@300;400;500;700&display=swap');
+
+:root{
+    --color1: #ff8f46;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* SECCION INICIO */
+#incio{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#inicio header{
+    width: 100%;
+}
+
+#inicio header .contenido-header{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    position: relative;
+}
+
+#inicio header .contenido-header nav{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#inicio header .contenido-header nav ul{
+    display: flex;
+    list-style: none;
+}
+
+#inicio header .contenido-header .logo img{
+    width: 100px;
+}
+
+#inicio header .contenido-header nav ul li{
+    text-align: center;
+}
+
+#inicio header .contenido-header nav ul li i{
+    display: block;
+    color: #a8a8a8;
+    margin: 0 20px;
+}
+
+#inicio header .contenido-header nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #a8a8a8;
+    margin: 0 20px;
+}
+
+.nav-responsive{
+    font-size: 25px;
+    color: #a8a8a8;
+    display: none;
+    margin-left: 85%;
+    background: #fff;
+    padding: 10px;
+    z-index: 100;
+    border-radius: 20%;
+}
+
+#inicio header .contenido-header nav ul li:hover i{
+    color: var(--color1);
+}
+
+#inicio header .contenido-header .social a{
+    display: inline-block;
+    background-color: var(--color1);
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+
+/* CARRUSEL */
+#inicio .carrusel{
+    position: relative;
+    height: 100%;
+}
+
+#inicio .carrusel .info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    color: #fff;
+    text-align: center;
+}
+
+#inicio .carrusel .info h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: 'Dancing Script';
+}
+
+#inicio .carrusel .info button{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 20px;
+    border: none;
+    background-color: var(--color1);
+    color: #fff;
+    padding: 7px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#inicio .gallery{
+    width: 100%;
+    height: 100%;
+}
+
+
+#inicio .gallery-cell img{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* SECCION SERVICIOS */
+#servicios{
+    padding: 50px 0;
+}
+
+#servicios h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    padding: 20px;
+}
+
+#servicios h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+#servicios .fila{
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    justify-content:center;
+    align-items: center;
+}
+
+#servicios .fila .item{
+    display: flex;
+    align-items: center;
+    margin: 20px 30px;
+    padding: 5px;
+}
+
+#servicios .fila .item:hover{
+    background-color: var(--color1);
+    border-radius: 10px;
+    color: #fff;
+}
+
+#servicios .fila .item .icono i{
+    font-size: 50px;
+    color: var(--color1);
+}
+
+#servicios .fila .item:hover .icono i{
+    color: #fff;
+}
+
+#servicios .fila .item .info{
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+/* SECCION TURISMO */
+#turismo h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#turismo .fila{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#turismo .fila .item{
+    width: 33%;
+    position: relative;
+    overflow: hidden;
+}
+
+#turismo .fila .item img{
+    width: 100%;
+    display: block;
+}
+
+#turismo .fila .item p{
+    position: absolute;
+    width: 100%;
+    bottom: -100%;
+    padding: 10px;
+    background-color: var(--color1);
+    color: #fff;
+    transition: .5s;
+}
+
+#turismo .fila .item:hover p{
+    bottom: 0;
+}
+
+
+
+/* RESPONSIVE */
+@media screen and (max-width:1070px) {
+    #inicio header .contenido-header .social{
+        display: none;
+    }
+
+    #inicio header .contenido-header nav{
+        position: static;
+        transform: translate(0);
+    }
+}
+
+@media screen and (max-width:700px){
+    #servicios .fila{
+        display: inline-block;
+    }
+
+    #servicios .fila .item{
+        width: 100%;
+    }
+
+    #turismo .fila{
+        display: block;
+    }
+
+    #turismo .fila .item{
+        display: block;
+        width: 100%;
+    }
+
+    #inicio header .contenido-header nav{
+        position: initial;
+        display: none;
+        transform: translate(0);
+    }
+
+    .nav-responsive{
+        display: flex;
+        position: fixed;
+    }
+
+    #inicio header .contenido-header{
+        padding: 20px;
+    }
+
+    #inicio header .contenido-header nav.responsive{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 70px;
+        width: 100%;
+        height: 100vh;
+        background-color: #252a2e;
+        z-index: 99;
+    }
+
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10% 0;
+    }
+} 

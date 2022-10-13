@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostal La Gloria</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- CSS Flickity -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-- CSS Propio-->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+        <!-- ENCABEZADO -->
+        <header>
+            <div class="contenido-header">
+                <div class="logo">
+                    <img src="img/logoLaGloria.png" alt="">
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li>
+                            <a href="#inicio" onclick="seleccionar()">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Inicio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#nosotros" onclick="seleccionar()">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Nosotros</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#servicios" onclick="seleccionar()">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Servicios</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#turismo" onclick="seleccionar()">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Turismo</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#ubicacion" onclick="seleccionar()">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Ubicacion</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#galeria" onclick="seleccionar()">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Galeria</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contacto" onclick="seleccionar()">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Contacto</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <div class="social">
+                    <a href="Telefono: +56934810528">
+                        <i class="fa-solid fa-phone"></i>
+                        +56934810528
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                </div>
+                <div class="nav-responsive" id="bar" onclick="mostrarOcultar()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- CARRUSEL -->
+        <div class="carrusel">
+            <div class="gallery js-flickity" data-flickity-options='{"wrapAround":true, "pageDots":false, "autoPlay":true}'>
+                <div class="gallery-cell">
+                    <img src="img/image2.jpeg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/image8.jpeg" alt="">
+                </div>
+            </div>
+            <div class="info">
+                <h2>Ven a conocernos </h2>
+                <p>Desconectate de la ciudad y relajate</p>
+                <button>Leer Mas</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SERVICIOS-->
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <div class="habitaciones">
+            <h3>Habitaciones</h3>
+            <div class="fila">
+                <div class="item">
+                    <div class="icono">
+                        <i class='bx bxs-bed'></i>
+                    </div>
+                    <div class="info">
+                        <p>Matrimoniales.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icono">
+                        <i class="fa-solid fa-bed"></i>
+                    </div>
+                    <div class="info">
+                        <p>Dobles (2camas).</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icono">
+                        <i class='bx bxs-bed'></i>
+                    </div>
+                    <div class="info">
+                        <p>Matrimonial + cama 1 plaza.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item">
+                    <div class="icono">
+                        <i class="fa-solid fa-bed"></i>
+                    </div>
+                    <div class="info">
+                        <p>Matrimonial + camarote (triple).</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icono">
+                        <i class='bx bxs-bed'></i>
+                    </div>
+                    <div class="info">
+                        <p>Single (1 cama).</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="servicios-adicionales">
+            <h3>Servicios Adicionales</h3>
+            <div class="fila">
+                <div class="item">
+                    <div class="icono">
+                        <i class="fa-solid fa-tv"></i>
+                    </div>
+                    <div class="info">
+                        <p>TV Satelital.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icono">
+                        <i class="fa-solid fa-couch"></i>
+                    </div>
+                    <div class="info">
+                        <p>Sala de estar.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icono">
+                        <i class="fa-solid fa-people-roof"></i>
+                    </div>
+                    <div class="info">
+                        <p>Terraza.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item">
+                    <div class="icono">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <div class="info">
+                        <p>Quincho.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icono">
+                        <i class="fa-solid fa-martini-glass-citrus"></i>
+                    </div>
+                    <div class="info">
+                        <p>Bar Internacional.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icono">
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+                    <div class="info">
+                        <p>Cafeteria.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item">
+                    <div class="icono">
+                        <i class="fa-solid fa-wifi"></i>
+                    </div>
+                    <div class="info">
+                        <p>Wifi.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icono">
+                        <i class="fa-solid fa-jug-detergent"></i>
+                    </div>
+                    <div class="info">
+                        <p>Lavanderia.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icono">
+                        <i class="fa-solid fa-square-parking"></i>
+                    </div>
+                    <div class="info">
+                        <p>Estacionamiento.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION TURISMO -->
+    <section id="turismo">
+        <h2>Atractivos Turisticos</h2>
+
+        <div class="fila">
+            <div class="item">
+                <img src="img/alrededores3.jpg" alt="">
+                <p>ambar</p>
+            </div>
+            <div class="item">
+                <img src="" alt="">
+                <p></p>
+            </div>
+            <div class="item">
+                <img src="" alt="">
+                <p></p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="item">
+                <img src="img/alrededores3.jpg" alt="">
+                <p>ambar</p>
+            </div>
+            <div class="item">
+                <img src="" alt="">
+                <p></p>
+            </div>
+            <div class="item">
+                <img src="" alt="">
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto">
+        <div class="fila">
+            <div class="col">
+                <h1>La gloria</h1>
+            </div>
+            <div class="col">
+                <h3></h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript Flickity -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- JavasScript Propio -->
+    <script src="js/script.js"></script>
+</body>
+</html>
