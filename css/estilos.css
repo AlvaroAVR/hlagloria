@@ -14,6 +14,14 @@ html{
     scroll-behavior: smooth;
 }
 
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
 /* SECCION INICIO */
 #incio{
     height: 100vh;
@@ -94,7 +102,12 @@ html{
 /* CARRUSEL */
 #inicio .carrusel{
     position: relative;
-    height: 100%;
+    height: 50%;
+    margin: auto;
+    max-width: 1200px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 50px;
 }
 
 #inicio .carrusel .info{
@@ -134,9 +147,40 @@ html{
 #inicio .gallery-cell img{
     display: block;
     width: 100vw;
-    height: 100vh;
+    height: 60vh;
+    max-width: 1200px;
     object-fit: cover;
+    border-radius: 20px;
 }
+
+/* SECCION NOSOTROS */
+#nosotros{
+}
+
+.nosotros{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 20px;
+    padding-bottom: 40px;
+}
+
+#nosotros h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.quienes{
+    width: 60%;
+    margin: 20px;
+}
+.proposito{
+    width: 40%;
+    margin: 20px;
+}
+
 
 /* SECCION SERVICIOS */
 #servicios{
@@ -148,6 +192,12 @@ html{
     font-weight: bold;
     font-size: 50px;
     padding: 20px;
+}
+
+#servicios .text_servicios{
+    width: 80%;
+    margin: auto;
+    text-align: center;
 }
 
 #servicios h3{
@@ -193,7 +243,71 @@ html{
     font-size: 14px;
 }
 
+/* SECCION GALERIA */
+
+
+.contenedor-galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-galeria{
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.imagen-light{
+    position: fixed;
+    background: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.show{
+    transform: translate(0);
+}
+
+.agregar-imagen{
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+
+.showImage{
+    transform: scale(1);
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+}
+
+
+
 /* SECCION TURISMO */
+
+#turismo{
+    max-width: 1200px;
+    margin: auto;
+    background: #FBF8F7;
+    border-radius: 20px;
+    padding: 30px 0;
+}
 #turismo h2{
     text-align: center;
     font-weight: bold;
@@ -216,6 +330,7 @@ html{
 
 #turismo .fila .item img{
     width: 100%;
+    height: 100%;
     display: block;
 }
 
@@ -233,6 +348,104 @@ html{
     bottom: 0;
 }
 
+/* SECCION UBICACION */
+.ubicacion{
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.como_llegar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.como_llegar h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.como_llegar p{
+    text-align: center;
+}
+
+/* FOOTER */
+
+#footer{
+    background:var(--color1);
+}
+
+footer{
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 0.1px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.contact-us{
+    width: 40%;
+    color: #fff;
+}
+
+.brand{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.brand+p{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.social-media-icon:hover{
+    background: #fff;
+    color: var(--color1);
+}
+
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
 
 
 /* RESPONSIVE */
@@ -253,7 +466,7 @@ html{
     }
 
     #servicios .fila .item{
-        width: 100%;
+        width: 80%;
     }
 
     #turismo .fila{
@@ -262,7 +475,8 @@ html{
 
     #turismo .fila .item{
         display: block;
-        width: 100%;
+        width: 80%;
+    margin: auto;
     }
 
     #inicio header .contenido-header nav{
