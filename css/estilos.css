@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand:wght@300;400;500;700&display=swap');
 
 :root{
-    --color1: #ff8f46;
+    --color1: #7798f2;
+    --color2: #152440;
+    --color3: #425b93;
+    --color4: #b4dcff;
 }
 
 *{
@@ -115,9 +118,14 @@ html{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50%;
+    width: 35%;
+    height: 15%;
     color: #fff;
     text-align: center;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
 }
 
 #inicio .carrusel .info h2{
@@ -155,6 +163,7 @@ html{
 
 /* SECCION NOSOTROS */
 #nosotros{
+    margin: 30px 0;
 }
 
 .nosotros{
@@ -163,6 +172,9 @@ html{
     margin: auto;
     border-radius: 20px;
     padding-bottom: 40px;
+    background: url(/img/svg/subtle-prism.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 #nosotros h2{
@@ -170,15 +182,22 @@ html{
     font-weight: bold;
     font-size: 40px;
     padding: 20px;
+    color: #ffffff;
+}
+
+#nosotros p{
+    color: #ffffff;
 }
 
 .quienes{
     width: 60%;
     margin: 20px;
+    padding-left: 40px;
 }
 .proposito{
     width: 40%;
     margin: 20px;
+    padding-right: 40px;
 }
 
 
@@ -326,6 +345,8 @@ html{
     width: 33%;
     position: relative;
     overflow: hidden;
+    margin: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
 
 #turismo .fila .item img{
@@ -349,10 +370,26 @@ html{
 }
 
 /* SECCION UBICACION */
+/* #ubicacion{
+    background: url(/./img/svg/flat-mountains.svg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 100%;
+} */
+
+#ubicacion{
+    margin: 30px 0;
+}
+
 .ubicacion{
     max-width: 1200px;
     margin: auto;
     padding: 50px 0;
+    background: url(/img/svg/rainbow-vortex.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .como_llegar{
@@ -369,11 +406,41 @@ html{
     font-weight: bold;
     font-size: 40px;
     padding: 20px;
+    color: #ffffff;
 }
 
 .como_llegar p{
     text-align: center;
+    color: #ffffff;
 }
+
+.subidaBajada{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px 0px;
+}
+
+.horarios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.mapa{
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.mapa iframe{
+    width: 100%;
+    height: 100%;
+}
+
 
 /* FOOTER */
 
