@@ -17,6 +17,16 @@ html{
     scroll-behavior: smooth;
 }
 
+h2{
+    font-family: 'Dancing Script';
+    font-weight: bold;
+}
+
+h3{
+    font-family: 'Dancing Script';
+    font-weight: bold;
+}
+
 .contenedor{
     width: 90%;
     max-width: 1200px;
