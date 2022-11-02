@@ -16,7 +16,7 @@
     <!-- CSS Flickity -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 
     <!-- CSS Propio-->
     <link rel="stylesheet" href="css/estilos.css">
@@ -132,14 +132,56 @@
         <div class="contenedor">
           <h2 class="subtitulo swiperText">Galeria</h2>
           <div class="contenedor-galeria">
-            <img src="img/termas-soleado.jpg" alt="" class="img-galeria" />
-            <img src="img/alrededores3.jpg" alt="" class="img-galeria" />
-            <img src="img/alrededores4.jpg" alt="" class="img-galeria" />
-            <img src="img/huellas2.jpg" alt="" class="img-galeria" />
-            <img src="img/paisaje5.JPG" alt="" class="img-galeria" />
-            <img src="img/paisaje13.jpg" alt="" class="img-galeria" />
+            <img src="img/galeriaHostal/hostal1.JPG" alt="" class="img-galeria" />
+            <img src="img/galeriaHostal/hostal2.JPG" alt="" class="img-galeria" />
+            <img src="img/galeriaHostal/hostal3.JPG" alt="" class="img-galeria" />
+            <img src="img/galeriaHostal/hostal4.JPG" alt="" class="img-galeria" />
+            <img src="img/galeriaHostal/hostal5.JPG" alt="" class="img-galeria" />
+            <img src="img/galeriaHostal/hostal6.JPG" alt="" class="img-galeria" />
+            <img src="img/galeriaHostal/hostal7.JPG" alt="" class="img-galeria" />
+            <img src="img/galeriaHostal/hostal8.JPG" alt="" class="img-galeria" />
+            <img src="img/galeriaHostal/hostal9.JPG" alt="" class="img-galeria" />
+            <img src="img/galeriaHostal/hostal10.JPG" alt="" class="img-galeria" />
+            <img src="img/galeriaHostal/hostal11.JPG" alt="" class="img-galeria" />
+            <img src="img/galeriaHostal/hostal12.JPG" alt="" class="img-galeria" />
+            <img src="img/galeriaHostal/hostal13.JPG" alt="" class="img-galeria" />
+            <img src="img/galeriaHostal/habitacion.JPG" alt="" class="img-galeria" />
+            <img src="img/galeriaHostal/sala.JPG" alt="" class="img-galeria" />
+            <img src="img/galeriaHostal/comedor1.JPG" alt="" class="img-galeria" />
+            <img src="img/galeriaHostal/comedor2.JPG" alt="" class="img-galeria" />
+            <img src="img/galeriaHostal/comedor3.JPG" alt="" class="img-galeria" />
+            <img src="img/galeriaHostal/comedor4.JPG" alt="" class="img-galeria" />
+            <img src="img/galeriaHostal/comedor5.JPG" alt="" class="img-galeria" />
           </div>
         </div>
+      </section>
+
+      <section id="galeria2" class="galeria2">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide1"></div>
+              <div class="swiper-slide slide2"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+              <div class="swiper-slide"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
       </section>
 
       <section class="imagen-light">
@@ -149,8 +191,9 @@
 
     <!-- SECCION SERVICIOS-->
     <section id="servicios">
-        <h2 class="swiperText">Servicios</h2>
-        <p class="text_servicios">Nuestro servicio consiste en dar hospedaje completo a nuestros huéspedes , es así , como en  el precio por persona, esta incluido : <br>
+        <div  class="text_servicios">
+            <h2 class="swiperText">Servicios</h2>
+            <p>Nuestro servicio consiste en dar hospedaje completo a nuestros huéspedes , es así , como en  el precio por persona, esta incluido : <br>
             Desayuno, almuerzo y cena. <br>
             - Nuestras comidas , son típicas Chilenas.  <br>
             - Pan amasado hecho en nuestra Hostal. <br>
@@ -158,7 +201,9 @@
             - Bar con los mejores vinos , cervezas y destilados. (servicio extra) <br>
             ​<br>
             Nuestros valores son por persona. Varían según estación de temporada (alta y baja) Comienza en Diciembre y termina en Semana Santa.
-        </p>
+            </p>
+        </div>
+        
         <div class="contentService">
             <div class="habitaciones">
                 <h3>Habitaciones</h3>
@@ -445,12 +490,38 @@
 
     <!-- SECCION CONTACTO -->
     <section id="contacto">
-        <div class="fila">
-            <div class="col">
-                <h2>Contacto</h2>
+        <h2>Contactanos</h2>
+        <form id="form" action="" class="form">
+            <h3 class="contactanos"> Contacto </h3>
+            <label for="name">Nombre Completo <span>*</span></label>
+            <input class="name" required type="text" id="name" placeholder="">
+            <label for="email">Correo Electronico <span>*</span></label>
+            <input class="email" required type="text" id="email" placeholder="">
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+        <div class="mediosContacto">
+            <div class="redesSociales">
+                <h3>Redes Sociales</h3>
+                <div class="iconos">
+                    <a href="https://www.facebook.com/LaGloriahostal" class="socialIcon" target="_blank">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/lagloriahostal/" class="socialIcon" target="_blank">
+                        <i class="fa-brands fa-square-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/56934810528" class="socialIcon" target="_blank">
+                        <i class="fa-brands fa-square-whatsapp"></i>
+                    </a>
+                </div>
             </div>
-            <div class="col">
-                <h3></h3>
+            <div class="correo">
+                <h3>Correo Electronico:</h3>
+                <a href="Contactohostallagloria@gmail.com">contactohostallagloria@gmail.com</a>
+            </div>
+            <div class="llamados">
+                <h3>Llamados: </h3>
+                <p>+56934810528</p>
+                <p>+56996387823</p>
             </div>
         </div>
     </section>
@@ -463,6 +534,9 @@
                 <h2 class="brand">Hostal La Gloria</h2>
                 <p>Todos los derechos reservados</p>
               </div>
+              <div class="desarrollador">
+                <img src="img/logoAlvaroVargas.png" alt="">
+              </div>
               <div class="social-media">
                 <a href="https://www.facebook.com/LaGloriahostal" class="social-media-icon" target="_blank">
                   <i class="bx bxl-facebook"></i>
@@ -474,7 +548,7 @@
                   <i class="bx bxl-whatsapp"></i>
                 </a>
               </div>
-            </div>
+          </div>
             <div class="line"></div>
           </footer>
     </section>
@@ -486,7 +560,7 @@
     <!--Scroll para que se revelen los elementos de forma suave-->
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
 
     <!-- JavasScript Propio -->

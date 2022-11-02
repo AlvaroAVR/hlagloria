@@ -30,8 +30,20 @@ interval: 100,
 sr.reveal(`.swiper, .discount__img`, { origin: "left" });
 sr.reveal(`.about__img, .discount__data`, { origin: "right" });
 
+var swiper = new Swiper("#galeria2 .mySwiper", {
+    slidesPerView: 3,
+    grid: {
+      rows: 2,
+    },
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
 
-var swiper = new Swiper('.mySwiper', {
+
+var swiper2 = new Swiper('#turismo2 .mySwiper', {
     effect: 'coverflow',
     grabCursor: true,
     centeredSlides: true,

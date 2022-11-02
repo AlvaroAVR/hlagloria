@@ -12,12 +12,18 @@
     padding: 0;
     font-family: 'Quicksand';
 }
+
 svg{
     width: 100%;
     display: block;
     fill: currentColor;
 }
 
+html,
+body {
+    position: relative;
+    height: 100%;
+}
 
 html{
     scroll-behavior: smooth;
@@ -137,7 +143,7 @@ h3{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 35%;
-    height: 15%;
+    height: 30%;
     color: #fff;
     text-align: center;
     background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
@@ -217,20 +223,25 @@ h3{
     text-align: center;
     font-weight: bold;
     font-size: 50px;
-    padding: 20px;
+    padding-bottom:  20px;
 }
 
 #servicios .text_servicios{
-    width: 80%;
+    max-width: 1200px;
     margin: auto;
+    padding: 50px 0;
     text-align: center;
+    background: url(/img/svg/rainbow-vortex.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    border-radius: 20px;
 }
 
 #servicios h3{
     text-align: center;
     font-weight: bold;
     font-size: 30px;
-    padding-top: 40px;
     padding-bottom: 20px;
 }
 
@@ -291,7 +302,16 @@ h3{
 }
 
 /* SECCION GALERIA */
-
+#galeria2{
+    display: none;
+    background: #FBF8F7;
+    margin: auto;
+}
+.galeria2{
+    width: 1200px;
+    position: relative;
+    height: 100%;
+}
 
 .contenedor-galeria{
     display: flex;
@@ -301,6 +321,8 @@ h3{
 
 .img-galeria{
     width: 30%;
+    height: 250px;
+    object-fit: cover;
     display: block;
     margin-bottom: 15px;
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
@@ -345,7 +367,45 @@ h3{
     cursor: pointer;
 }
 
+#galeria2 .swiper {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  #galeria2 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: calc((100% - 30px) / 2) !important;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+.slide1{
+    background: url('/img/galeriaHostal/comedor1.JPG');
+    object-fit: cover;
+    background-size: cover;
+}
+
+.slide2{
+    background: url('/img/galeriaHostal/comedor1.JPG');
+    object-fit: cover;
+    background-size: cover;
+}
 
 /* SECCION TURISMO */
 
@@ -423,13 +483,13 @@ h3{
     padding: 20px;
 }
 
-.swiper {
+#turismo2 .swiper {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
-  }
+}
 
-.swiper-slide {
+#turismo2 .swiper-slide {
     background-position: center;
     background-size: cover;
     width: 550px;
@@ -441,18 +501,18 @@ h3{
     overflow: hidden;
 }
 
-.swiper-slide-active{
+#turismo2 .swiper-slide-active{
     filter: blur(0px);
 }
 
-.swiper-slide img {
+#turismo2 .swiper-slide img {
     display: block;
     width: 100%;
     height: 300px;
     object-fit: cover;
 }
 
-.swiper-slide .content{
+#turismo2 .swiper-slide .content{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -460,7 +520,7 @@ h3{
     margin: 15px;
 }
 
-.swiper-slide .content h3{
+#turismo2 .swiper-slide .content h3{
     font-size: 25px;
     font-weight: bold;
     padding-bottom: 20px;
@@ -541,6 +601,107 @@ h3{
 
 
 /* SECCION CONTACTO */ 
+#contacto{
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    background: #FBF8F7;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+#contacto h2{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    margin: 20px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-items: flex-start;
+    margin: 50px 20px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.form h3{
+    font-size: 30px;
+    margin: 0 auto ;
+}
+.form span{
+    color: red;
+}
+.form label{
+    font-size: 20px;
+    padding: 10px;
+    width: auto;
+}
+
+.form input{
+    padding: 5px;
+    font-size: 16px;
+    width: 90%;
+    margin-bottom: 10px;
+}
+.form button{
+    width: 30%;
+    height: 40px;
+    margin: 0 auto;
+    border: none;
+    background: var(--color2);
+    color: #fff;
+    border-radius: 5px;
+}
+
+.mediosContacto{
+    background: #fff;
+    width: 500px;
+    margin: 50px 20px;
+    color: var(--color2);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.mediosContacto h3{
+    font-size: 30px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mediosContacto .socialIcon{
+    color: var(--color2);
+    font-size: 50px;
+    text-decoration: none;
+    margin: 0 20px 10px;
+}
+
+.iconos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mediosContacto p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.correo{
+    text-align: center;
+    margin: 0 auto 20px;
+}
+
+.correo a{
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--color1);
+}
 
 
 
@@ -566,8 +727,14 @@ footer{
 }
 
 .contact-us{
-    width: 40%;
     color: #fff;
+}
+
+.desarrollador{
+    justify-content: center;
+}
+.desarrollador img{
+    width: 150px;
 }
 
 .brand{
@@ -581,7 +748,6 @@ footer{
 }
 
 .social-media{
-    width: 50%;
     display: flex;
     justify-content: flex-end;
 }
