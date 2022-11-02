@@ -16,6 +16,8 @@
     <!-- CSS Flickity -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
     <!-- CSS Propio-->
     <link rel="stylesheet" href="css/estilos.css">
 </head>
@@ -104,7 +106,7 @@
                 </div>
             </div>
             <div class="info">
-                <h2>Ven a conocernos </h2>
+                <h2 class="swiperText">Ven a conocernos </h2>
                 <p>Desconectate de la ciudad y relajate</p>
             </div>
         </div>
@@ -114,12 +116,12 @@
     <section id="nosotros">
         <div class="nosotros">
             <div class="quienes">
-                <h2>¿Quiénes somos?</h2>
+                <h2 class="swiperText">¿Quiénes somos?</h2>
                 <p>
                     A principios de la década de los años setenta ,nuestra familia Muñoz Cornejo ,viaja a las termas del flaco, como muchas personas lo hacían por el día, para disfrutar de sus aguas termales medicinales,encontramos tan cautivante este paraje en medio de la cordillera , que nos lleva a realizar gestiones con las autoridades de San Fernando , al año siguiente , se da la oportunidad de poder instalarse con una casita ,donde nace la idea de dar pensión y alojamiento , a personas en principio conocidas , es así como comenzamos a echar raíces y crecer , para hoy prestar servicio de hospedaje a turistas de todo Chile y el extranjero , convirtiéndonos en una de las mejores hostales de las Termas Del Flaco. Con un grato ambiente de descanso, atendida hasta el día de hoy, por sus propios dueños.</p>
             </div>
             <div class="proposito">
-                <h2>Nuestro proposito</h2>
+                <h2 class="swiperText">Nuestro proposito</h2>
                 <p>Como Hostal familiar , nuestro propósito es dar el mejor servicio posible, para que nuestros huéspedes se sientan como en casa , por esa razón, es atendida por sus propios dueños y personal capacitado para dar todas las condiciones necesarias para que su estancia con nosotros sea solo de tranquilidad y relajo. Haciendo de Hostal La Gloria su casa.</p>
             </div>
         </div>
@@ -128,7 +130,7 @@
     <!-- SECCION GALERIA -->
     <section class="galeria" id="turismo">
         <div class="contenedor">
-          <h2 class="subtitulo">Galeria</h2>
+          <h2 class="subtitulo swiperText">Galeria</h2>
           <div class="contenedor-galeria">
             <img src="img/termas-soleado.jpg" alt="" class="img-galeria" />
             <img src="img/alrededores3.jpg" alt="" class="img-galeria" />
@@ -147,7 +149,7 @@
 
     <!-- SECCION SERVICIOS-->
     <section id="servicios">
-        <h2>Servicios</h2>
+        <h2 class="swiperText">Servicios</h2>
         <p class="text_servicios">Nuestro servicio consiste en dar hospedaje completo a nuestros huéspedes , es así , como en  el precio por persona, esta incluido : <br>
             Desayuno, almuerzo y cena. <br>
             - Nuestras comidas , son típicas Chilenas.  <br>
@@ -155,141 +157,141 @@
             - Comidas basadas en Entrada , Fondo y postre. <br>
             - Bar con los mejores vinos , cervezas y destilados. (servicio extra) <br>
             ​<br>
-            Nuestros valores son por persona. Varían según estación de temporada (alta y baja) Comienza en Diciembre y termina en Semana Santa.</p>
-        <div class="habitaciones">
-            <h3>Habitaciones</h3>
-            <div class="fila">
-                <div class="item">
-                    <div class="icono">
-                        <i class='bx bxs-bed'></i>
+            Nuestros valores son por persona. Varían según estación de temporada (alta y baja) Comienza en Diciembre y termina en Semana Santa.
+        </p>
+        <div class="contentService">
+            <div class="habitaciones">
+                <h3>Habitaciones</h3>
+                <div class="gridHabitaciones">
+                    <div class="item">
+                        <div class="icono">
+                            <i class='bx bxs-bed'></i>
+                        </div>
+                        <div class="info">
+                            <p>Matrimoniales.</p>
+                        </div>
                     </div>
-                    <div class="info">
-                        <p>Matrimoniales.</p>
+                    <div class="item">
+                        <div class="icono">
+                            <i class="fa-solid fa-bed"></i>
+                        </div>
+                        <div class="info">
+                            <p>Dobles (2camas).</p>
+                        </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="icono">
-                        <i class="fa-solid fa-bed"></i>
+                    <div class="item">
+                        <div class="icono">
+                            <i class='bx bxs-bed'></i>
+                        </div>
+                        <div class="info">
+                            <p>Matrimonial + cama 1 plaza.</p>
+                        </div>
                     </div>
-                    <div class="info">
-                        <p>Dobles (2camas).</p>
+                    <div class="item">
+                        <div class="icono">
+                            <i class="fa-solid fa-bed"></i>
+                        </div>
+                        <div class="info">
+                            <p>Matrimonial + camarote (triple).</p>
+                        </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="icono">
-                        <i class='bx bxs-bed'></i>
-                    </div>
-                    <div class="info">
-                        <p>Matrimonial + cama 1 plaza.</p>
+                    <div class="item">
+                        <div class="icono">
+                            <i class='bx bxs-bed'></i>
+                        </div>
+                        <div class="info">
+                            <p>Single (1 cama).</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="fila">
-                <div class="item">
-                    <div class="icono">
-                        <i class="fa-solid fa-bed"></i>
+
+            <div class="separacion"></div>
+
+            <div class="servicios-adicionales">
+                <h3>Servicios Adicionales</h3>
+                <div class="gridServicios">
+                    <div class="item">
+                        <div class="icono">
+                            <i class="fa-solid fa-tv"></i>
+                        </div>
+                        <div class="info">
+                            <p>TV Satelital.</p>
+                        </div>
                     </div>
-                    <div class="info">
-                        <p>Matrimonial + camarote (triple).</p>
+                    <div class="item">
+                        <div class="icono">
+                            <i class="fa-solid fa-couch"></i>
+                        </div>
+                        <div class="info">
+                            <p>Sala de estar.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icono">
+                            <i class="fa-solid fa-people-roof"></i>
+                        </div>
+                        <div class="info">
+                            <p>Terraza.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icono">
+                            <i class="fa-solid fa-utensils"></i>
+                        </div>
+                        <div class="info">
+                            <p>Quincho.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icono">
+                            <i class="fa-solid fa-martini-glass-citrus"></i>
+                        </div>
+                        <div class="info">
+                            <p>Bar Internacional.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icono">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                        <div class="info">
+                            <p>Cafeteria.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icono">
+                            <i class="fa-solid fa-wifi"></i>
+                        </div>
+                        <div class="info">
+                            <p>Wifi.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icono">
+                            <i class="fa-solid fa-jug-detergent"></i>
+                        </div>
+                        <div class="info">
+                            <p>Lavanderia.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icono">
+                            <i class="fa-solid fa-square-parking"></i>
+                        </div>
+                        <div class="info">
+                            <p>Estacionamiento.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="icono">
-                        <i class='bx bxs-bed'></i>
-                    </div>
-                    <div class="info">
-                        <p>Single (1 cama).</p>
-                    </div>
-                </div>
-                
             </div>
         </div>
-        <div class="servicios-adicionales">
-            <h3>Servicios Adicionales</h3>
-            <div class="fila">
-                <div class="item">
-                    <div class="icono">
-                        <i class="fa-solid fa-tv"></i>
-                    </div>
-                    <div class="info">
-                        <p>TV Satelital.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="icono">
-                        <i class="fa-solid fa-couch"></i>
-                    </div>
-                    <div class="info">
-                        <p>Sala de estar.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="icono">
-                        <i class="fa-solid fa-people-roof"></i>
-                    </div>
-                    <div class="info">
-                        <p>Terraza.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="fila">
-                <div class="item">
-                    <div class="icono">
-                        <i class="fa-solid fa-utensils"></i>
-                    </div>
-                    <div class="info">
-                        <p>Quincho.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="icono">
-                        <i class="fa-solid fa-martini-glass-citrus"></i>
-                    </div>
-                    <div class="info">
-                        <p>Bar Internacional.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="icono">
-                        <i class="fa-solid fa-mug-hot"></i>
-                    </div>
-                    <div class="info">
-                        <p>Cafeteria.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="fila">
-                <div class="item">
-                    <div class="icono">
-                        <i class="fa-solid fa-wifi"></i>
-                    </div>
-                    <div class="info">
-                        <p>Wifi.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="icono">
-                        <i class="fa-solid fa-jug-detergent"></i>
-                    </div>
-                    <div class="info">
-                        <p>Lavanderia.</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="icono">
-                        <i class="fa-solid fa-square-parking"></i>
-                    </div>
-                    <div class="info">
-                        <p>Estacionamiento.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </section>
 
     <!-- SECCION TURISMO -->
-    <section id="turismo">
-        <h2>Atractivos Turisticos</h2>
+    <!-- <section id="turismo">
+        <h2 class="swiperText">Atractivos Turisticos</h2>
 
         <div class="fila">
             <div class="item">
@@ -331,6 +333,74 @@
             <div class="item">
                 <img src="img/image8.jpeg" alt="">
                 <p>Flora de la zona</p>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="turismo2">
+        <h2 class="swiperText">Atractivos Turisticos</h2>
+        <div class="mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/termas-soleado.jpg">
+                    <div class="content">
+                        <h3>Aguas Termales</h3>
+                        <p>Las propiedades de estas termas comenzaron a ser estudiadas en 1861 por Ignacio Domeyko, y fueron actualizadas por la Facultad de Química de la Pontificia Universidad Católica de Chile. Las aguas de los Baños del Tinguiririca son utilizadas para tratar la artritis, reumatismo , afecciones de las vías respiratorias, neuralgias, rinitis, ciática y los síntomas de la gota. </p>
+                    </div>
+                    
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/huellas2.jpg">
+                    <div class="content">
+                        <h3>Huellas de dinosaurio</h3>
+                        <p>Placa con huellas de dinosaurio descubiertas en 1060, por Diego Márquez , de mas de 150 millones de años de antiguedad.  alcanzan un promedio de 60cm de alto y se reconocen huellas de terópodos, suarópodos y Ornitópodos 
+                            Fueron declaradas monumento historico en 1967</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/loros.jpg">
+                    <div class="content">
+                        <h3>Flora y Fauna</h3>
+                        <p>Las Termas del Flaco son el hogar de varios animales, donde destacan el Condor y Loros Tricague , sus paisajes cordilleranos los haran disfrutar de Rios, Lagunas , Quebradas, Cerros , Vegas y mucho mas! un sitio ideal para caminar y recorrer la naturaleza como nunca antes.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/paisaje5.JPG">
+                    <div class="content">
+                        <h3>La Virgen</h3>
+                        <p>Salto de agua de unos 25 metros. Tras esta cascada es posible encontrar una estatua de bronce de una virgen,  cuentan la leyenda fue llevada por un arriero Chileno a modo de agradecimiento, quien se escondió en la cascada tras ser perseguido por arrieros Argentinos.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/paisaje13.jpg">
+                    <div class="content">
+                        <h3>Hospital Tuberculosis</h3>
+                        <p>construcción que corresponde a un hospital iniciado en 1939, cuyo fin era el tratamiento de la Tuberculosis, pero que se dejó en obra gruesa tras la aparición de los tratamientos de penicilina. hoy esta abandonado y sus paredes mantienen en escritos los recuerdos de cientos de personas que lo visitaron. </p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/alrededores3.jpg">
+                    <div class="content">
+                        <h3>Chorro de la Vieja</h3>
+                        <p>Salto de Agua de mas de 30m de camnio a termas del flaco , excelente postal para fotografiar y conocer , a 30 minitos aprox de Termas del Flaco</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/alrededores4.jpg">
+                    <div class="content">
+                        <h3>Cabalgatas</h3>
+                        <p>Arriendo de caballos para recorrer las faldas cordilleranas y pasear en familia por los hermosos paisajes que Termas del Flaco les regala
+                            ​<br>
+                            *servicio externo a nuestra hostal</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/image2.jpeg">
+                    <div class="content">
+                        <h3>La Mina</h3>
+                        <p>Mina abandonada que turistas gustan visitar , por su profunidad y oscuridad, ubicada a 15 minutos de Termas del Flaco.  Se pueden encontrar piedras minerales en su interiror , que muchos llevan como recuerdo del lugar.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -377,7 +447,7 @@
     <section id="contacto">
         <div class="fila">
             <div class="col">
-                <h1>La gloria</h1>
+                <h2>Contacto</h2>
             </div>
             <div class="col">
                 <h3></h3>
@@ -412,6 +482,12 @@
 
     <!-- JavaScript Flickity -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!--Scroll para que se revelen los elementos de forma suave-->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
 
     <!-- JavasScript Propio -->
     <script src="js/script.js"></script>
